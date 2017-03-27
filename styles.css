@@ -1,0 +1,88 @@
+/* Master Styles */
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+body {
+  /*margin: 2em;*/
+}
+
+.row{
+  margin: 0 !important;
+}
+
+.col{
+  padding: 0 !important;
+}
+
+.padding0{
+  padding: 0 !important;
+}
+
+.margin0{
+  margin: 0 !important;
+}
+
+.center{
+  justify-content:center !important;
+  align-content: center !important;
+  display: inline-flex;
+  /*display: flex;*/
+  align-items: center !important;
+}
+
+.vertical-center{
+  align-content: center !important;
+  display: inline-flex;
+}
+
+.mouse-focus{
+  color: #fff;
+}
+
+.mouse-focus:hover{
+  color: #ff7a00;
+}
+
+.backgroundScale {
+    background-size: cover !important;
+    background-position: center !important; 
+    background-repeat: no-repeat !important;
+}
+
+.heightFullscreen{
+  height: 100vh;
+}
+
+.widthFullscreen{
+  width:100vw;
+}
+
+/*font-awesome css*/
+.fa:hover{
+  cursor: pointer;
+}
+
+.fa-home{
+  color: #fff;
+}
+.fa-home:hover{
+  color: #ff7a00;
+}
+
+.fa-search{
+  color: #fff;
+}
+.fa-search:hover{
+  color: #ff7a00;
+}
+/*font-awesome css*/
+
+
