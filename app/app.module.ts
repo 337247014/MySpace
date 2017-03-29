@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { AnimatesDirective } from 'css-animator';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';

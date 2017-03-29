@@ -2,6 +2,7 @@ import { Component,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import {HomeService} from './home.service'
+declare var $: any;
 
 @Component({
   moduleId: module.id,
