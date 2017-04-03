@@ -10,12 +10,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './Hello/hello.component';
 import {HomeComponent} from './home/home.component';
+import {NgbdCarouselBasic} from './common/carousel-basic'
 
 // import {HomeService} from './home/home.service';
 
 @NgModule({
   imports: [BrowserModule,FormsModule, AppRoutingModule,HttpModule, NgbModule.forRoot()],
-  declarations: [AppComponent,HelloComponent,HomeComponent],
+  declarations: [AppComponent,HelloComponent,HomeComponent,NgbdCarouselBasic],
   // providers:[HomeService],
   bootstrap: [AppComponent]
 })
