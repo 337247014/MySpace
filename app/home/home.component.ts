@@ -24,4 +24,8 @@ export class HomeComponent implements OnInit{
         //this.homeService.getHomeInfo().then(data => this.title = data.title, error => console.log(error));
     }
 
+    gotoScroll():void{
+        document.location = "home#tileCard";
+    }
+
 }
