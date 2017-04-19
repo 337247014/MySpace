@@ -1,7 +1,9 @@
 import { Component,OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import {HomeService} from './home.service'
+import {HomeService} from './home.service';
+import {UserService} from '../common/service/index';
+import {User} from '../models/index';
 declare var $: any;
 
 @Component({
@@ -9,23 +11,30 @@ declare var $: any;
   selector: 'my-home',
   templateUrl:'/app/home/home.html',
   styleUrls:['./home.css'],
-  providers:[HomeService]
+//   providers:[HomeService]
 })
 export class HomeComponent implements OnInit{ 
    title: any;
+   users: User[] = [];
 
     constructor(
         private router: Router,
-        private homeService: HomeService) {
+        private homeService: HomeService,
+        private userService:UserService) {
     }
 
     ngOnInit(): void {
         this.title = 'My Home';
+
+        this.userService.getUsers()
+            .subscribe(users => {
+                this.users = users;
+            });
         //this.homeService.getHomeInfo().then(data => this.title = data.title, error => console.log(error));
     }
 
     gotoScroll():void{
-        document.location = "home#tileCard";
+        // document.location = "home#tileCard";
     }
 
 }
