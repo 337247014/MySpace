@@ -4,7 +4,7 @@
         <div class="heightFullscreen backgroundScale" style="position:relative;background-image: url('/app/content/images/home-header.jpg')">
 
             <!--header-->
-            <div class="" style="text-decoration: none;position: relative; float: left; left: 8%;top: 5%;">
+            <div class="animated slideInDown" style="text-decoration: none;position: relative; float: left; left: 8%;top: 5%;">
                 <!--<img src="/app/content/images/logo1.png" style="width: 160px;"/>-->
                 <a href="mailto:my@qq.com?subject=This%20is%20the%20subject" style="text-decoration: none;">
                     <div class="backgroundScale circle-phone" style="background-image: url('/app/content/images/me.JPG');">
@@ -17,11 +17,11 @@
                 </a>
             </div>
 
-            <div class="" style="position: relative; float: right; right: 12%;top: 5%;" placement="bottom" ngbTooltip="Home">
+            <div class="animated slideInDown" style="position: relative; float: right; right: 12%;top: 5%;" placement="bottom" ngbTooltip="Home">
                 <a [routerLink]="['/home']"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
             </div>
 
-            <div style="position: relative; float: right;right:5%;top: 5%;" placement="bottom" ngbTooltip="Sign out">
+            <div class="animated slideInDown delay-1" style="position: relative; float: right;right:5%;top: 5%;" placement="bottom" ngbTooltip="Sign out">
                 <!--<i class="fa fa-search fa-2x" aria-hidden="true"></i>-->
                 <a [routerLink]="['/login']"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
             </div>
@@ -33,17 +33,17 @@
                 </div>
             </div>-->
             <div class="center" style="width: 100%;margin-top: 5%;">
-                <h4 style="color: white">{{title}}</h4>
+                <h4 class="animated rotateInDownLeft" style="color: white">{{title}}</h4>
             </div>
 
             <!--content-->
-            <div style="position: absolute;float: left;left: 8%; bottom: 10%;width: 60%;">
-                <h3 style="color: #fff;">Welcome</h3>
-                <p style="color: #fff;">this is my space, which will record my personal learn and konwledge</p>
+            <div class="animated slideInUp" style="position: absolute;float: left;left: 8%; bottom: 10%;width: 60%;">
+                <h3 class="" style="color: #fff;">Welcome</h3>
+                <p class="animated slideInUp delay-1" style="color: #fff;">this is my space, which will record my personal learn and konwledge</p>
             </div>
 
             <!--scroll down to exploer-->
-            <div href="#card" style="position: absolute;float: right;bottom: 10%;right: 10%" (click)="gotoScroll()">
+            <div class="animated slideInUp" href="#card" style="position: absolute;float: right;bottom: 10%;right: 10%" (click)="gotoScroll()">
                 <div class="vertical-center mouse-focus" style="cursor: pointer;">
                     <i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i>
                     <span style="font-weight: bold;margin-left: 10px;">SCROLL DOWN <br />TO EXPLORE</span>
@@ -52,12 +52,11 @@
 
         </div>
 
-
         <!--cards part1-->
         <div class="row" name="tileCard" id="tileCard">
             <div class="col-3 padding0">
                 <!--Guildlines-->
-                <div class="card-wrapper" style="height: 33.333vh;width: 100%;">
+                <div class="card-wrapper animated slideInUp" style="height: 33.333vh;width: 100%;">
                     <div class="backgroundScale back-image-transition width-height-100" style="background-image: url('/app/content/images/home/1.jpg');"></div>
                     <div class="center card-content width-height-100">
                         <h4 style="color:#fff;">Guildlines</h4>
@@ -74,8 +73,8 @@
                 </div>
 
                 <!--card 2-->
-                <div class="card-wrapper" style="height: 33.333vh;width: 100%;">
-                    <div class="backgroundScale back-image-transition width-height-100" style="background-color: #fff;"></div>
+                <div class="card-wrapper animated slideInUp" style="height: 33.333vh;width: 100%;">
+                    <div class="backgroundScale back-image-transition width-height-100" style="background-color: #ff7a00;"></div>
                     <div class="center card-content width-height-100">
                         <h4 style="color:#333;">Card 2</h4>
                     </div>
@@ -91,7 +90,7 @@
                 </div>
 
                 <!--card 3-->
-                <div class="card-wrapper" style="height: 33.333vh;width: 100%;">
+                <div class="card-wrapper animated slideInUp" style="height: 33.333vh;width: 100%;">
                     <div class="backgroundScale back-image-transition width-height-100" style="background-image: url('/app/content/images/home/4.jpg');"></div>
                     <div class="center card-content width-height-100">
                         <h4 style="color:#fff;">Card 3</h4>
