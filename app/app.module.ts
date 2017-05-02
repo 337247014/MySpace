@@ -15,6 +15,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './Hello/hello.component';
 import { HomeComponent } from './home/home.component';
+import { BrandImagesComponent } from './brandImages/brandImages.component';
+import {SubheaderComponent} from './common/component/subheader.component';
 import { NgbdCarouselBasic } from './common/carousel-basic'
 
 import { AuthGuard } from './common/guards/index';
@@ -25,7 +27,7 @@ import { HomeService } from './home/home.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpModule, NgbModule.forRoot()],
-  declarations: [AppComponent, HelloComponent, HomeComponent, LoginComponent, NgbdCarouselBasic],
+  declarations: [AppComponent, HelloComponent, HomeComponent, LoginComponent, NgbdCarouselBasic,BrandImagesComponent,SubheaderComponent],
   providers: [AuthGuard,
     AuthenticationService,
     UserService,

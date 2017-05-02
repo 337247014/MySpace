@@ -1,0 +1,33 @@
+import { Component,OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+import{BrandImage} from '../models/index';
+
+@Component({
+  moduleId: module.id,
+  selector: 'my-images',
+  templateUrl:'/app/brandImages/brandImages.html',
+  styleUrls:['./brandImages.css'],
+})
+export class BrandImagesComponent implements OnInit{ 
+   brandImages: BrandImage[];
+
+    constructor(
+        private router: Router) {
+    }
+
+    ngOnInit(): void {
+        this.brandImages = [{imageUrl:'/app/content/images/home/1.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/1.jpg'},
+        {imageUrl:'/app/content/images/home/2.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/2.jpg'},
+        {imageUrl:'/app/content/images/home/3.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/3.jpg'},
+        {imageUrl:'/app/content/images/home/carousel-1.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/carousel-1.jpg'},
+        {imageUrl:'/app/content/images/home/carousel-2.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/carousel-2.jpg'},
+        {imageUrl:'/app/content/images/home/carousel-3.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/carousel-3.jpg'},
+        {imageUrl:'/app/content/images/home/carousel-4.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/carousel-4.jpg'},
+        {imageUrl:'/app/content/images/home/carousel-5.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/carousel-5.jpg'},
+        {imageUrl:'/app/content/images/home/carousel-6.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/carousel-6.jpg'},
+        {imageUrl:'/app/content/images/home/4.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/4.jpg'},
+        {imageUrl:'/app/content/images/home/1.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/1.jpg'},];
+    }
+
+}
