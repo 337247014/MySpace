@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HelloComponent } from './Hello/hello.component';
 import { HomeComponent } from './home/home.component';
-import { BrandImagesComponent } from './brandImages/brandImages.component';
 import { LoginComponent } from './login/index';
 import { AuthGuard } from './common/guards/index';
 
@@ -12,7 +11,7 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'hello', component: HelloComponent },
     { path: 'home', component: HomeComponent , canActivate: [AuthGuard]},
-    { path: 'images', component: BrandImagesComponent , canActivate: [AuthGuard]}
+
 ];
 
 @NgModule({
