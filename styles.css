@@ -57,6 +57,10 @@ body {
     background-repeat: no-repeat !important;
 }
 
+.subHeaderScreen{
+  height: 30vw;
+}
+
 .heightFullscreen{
   height: 100vh;
 }
@@ -64,6 +68,36 @@ body {
 .widthFullscreen{
   width:100vw;
 }
+
+/*header*/
+.circle-phone{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.circle-phone-inner{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.8;
+    background-color:#ff7a00;
+    display: none;
+}
+
+.fa-phone-color{
+    color: #ff7a00;
+}
+
+.circle-phone:hover .circle-phone-inner {
+    display: inline-flex;
+    /*align-items: center*/
+}
+
+.circle-phone:hover .fa-phone-color{
+    color: #fff;
+}
+/*header*/
 
 /*font-awesome css*/
 .fa:hover{

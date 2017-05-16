@@ -9,27 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var hello_service_1 = require('./hello.service');
-var HelloComponent = (function () {
-    function HelloComponent(router, helloService) {
-        this.router = router;
-        this.helloService = helloService;
+var AppComponent = (function () {
+    function AppComponent() {
+        this.title = "My Space";
     }
-    HelloComponent.prototype.ngOnInit = function () {
-        this.title = 'Hello World';
-        //this.helloService.getHelloInfo().then(data => this.title = data.title, error => console.log(error));
-    };
-    HelloComponent = __decorate([
+    AppComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'hello-world',
-            templateUrl: '/app/Hello/hello.html',
-            providers: [hello_service_1.HelloService]
+            selector: 'my-app',
+            templateUrl: '/app/app.component.html'
         }), 
-        __metadata('design:paramtypes', [router_1.Router, hello_service_1.HelloService])
-    ], HelloComponent);
-    return HelloComponent;
+        __metadata('design:paramtypes', [])
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.HelloComponent = HelloComponent;
-//# sourceMappingURL=hello.component.js.map
+exports.AppComponent = AppComponent;
+//# sourceMappingURL=app.component.js.map

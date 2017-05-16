@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HelloComponent } from './Hello/hello.component';
-import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/index';
 import { AuthGuard } from './common/guards/index';
+import { HomeComponent } from './home/home.component';
+import { BrandImagesComponent } from './brandImages/brandImages.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
-    { path: 'hello', component: HelloComponent },
-    { path: 'home', component: HomeComponent , canActivate: [AuthGuard]},
+    { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
+    { path: 'images', component: BrandImagesComponent, canActivate: [AuthGuard] }
 
 ];
 
