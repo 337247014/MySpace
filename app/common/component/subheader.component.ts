@@ -1,20 +1,21 @@
-import { Component,OnInit } from '@angular/core';
-// import { Router } from '@angular/router';
+import { Component,OnInit,Input,Output,EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'sub-header',
   templateUrl:'/app/common/component/subheader.html',
   styleUrls:[],
 })
-export class SubheaderComponent{ 
-//    backgroundImage: any;
+export class SubheaderComponent implements OnInit{ 
+   @Input() backgroundImage: any;
+   @Input() headerText:string;
 
-//     constructor(
-//         private router: Router) {
-//     }
+    constructor(
+        private router: Router) {
+    }
 
-//     ngOnInit(): void {
-        
-//     }
+    ngOnInit(): void {
+      //  this.backgroundImage = "/app/content/images/home-header.jpg";
+    }
 
 }

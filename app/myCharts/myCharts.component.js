@@ -15,6 +15,8 @@ var MyChartsComponent = (function () {
         this.router = router;
     }
     MyChartsComponent.prototype.ngOnInit = function () {
+        this.subHeaderImage = "/app/content/images/home/3.jpg";
+        this.subHeaderText = "Charts";
         this.buildLineChart();
         this.buildBarChart();
         this.buildDoughnutChart();

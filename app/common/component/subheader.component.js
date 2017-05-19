@@ -9,17 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-// import { Router } from '@angular/router';
+var router_1 = require('@angular/router');
 var SubheaderComponent = (function () {
-    function SubheaderComponent() {
+    function SubheaderComponent(router) {
+        this.router = router;
     }
+    SubheaderComponent.prototype.ngOnInit = function () {
+        //  this.backgroundImage = "/app/content/images/home-header.jpg";
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], SubheaderComponent.prototype, "backgroundImage", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', String)
+    ], SubheaderComponent.prototype, "headerText", void 0);
     SubheaderComponent = __decorate([
         core_1.Component({
             selector: 'sub-header',
             templateUrl: '/app/common/component/subheader.html',
             styleUrls: [],
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], SubheaderComponent);
     return SubheaderComponent;
 }());

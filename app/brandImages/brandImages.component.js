@@ -15,6 +15,8 @@ var BrandImagesComponent = (function () {
         this.router = router;
     }
     BrandImagesComponent.prototype.ngOnInit = function () {
+        this.subHeaderImage = "/app/content/images/home/carousel-6.jpg";
+        this.subHeaderText = "Space Images";
         this.brandImages = [{ imageUrl: '/app/content/images/home/1.jpg', imageTitle: 'this is first image', detailUrl: '/app/content/images/home/1.jpg' },
             { imageUrl: '/app/content/images/home/2.jpg', imageTitle: 'this is first image', detailUrl: '/app/content/images/home/2.jpg' },
             { imageUrl: '/app/content/images/home/3.jpg', imageTitle: 'this is first image', detailUrl: '/app/content/images/home/3.jpg' },

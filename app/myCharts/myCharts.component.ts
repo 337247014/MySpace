@@ -8,6 +8,9 @@ import { Router } from '@angular/router';
     styleUrls: ['./myCharts.css'],
 })
 export class MyChartsComponent implements OnInit {
+    subHeaderImage:string;
+    subHeaderText:string;
+
     lineChartData: Array<any>;
     lineChartLabels: Array<any>;
     lineChartOptions: any;
@@ -49,6 +52,9 @@ export class MyChartsComponent implements OnInit {
     ) { }
 
     ngOnInit(): void {
+        this.subHeaderImage = "/app/content/images/home/3.jpg";
+        this.subHeaderText ="Charts";
+
         this.buildLineChart();
         this.buildBarChart();
         this.buildDoughnutChart();

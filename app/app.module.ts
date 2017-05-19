@@ -8,7 +8,7 @@ import { ChartsModule } from 'ng2-charts'
 
 //common
 import { AuthGuard } from './common/guards/index';
-import {SubheaderComponent} from './common/component/subheader.component';
+import {SubheaderComponent,SiteFooterComponent} from './common/component/index';
 
 //components
 import { AppComponent } from './app.component';
@@ -28,7 +28,7 @@ import { BaseRequestOptions } from '@angular/http';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpModule,AppRoutingModule,ChartsModule],
-  declarations: [AppComponent,LoginComponent,HomeComponent,BrandImagesComponent,SubheaderComponent,MyChartsComponent],
+  declarations: [AppComponent,LoginComponent,HomeComponent,BrandImagesComponent,SubheaderComponent,MyChartsComponent,SiteFooterComponent],
   providers: [AuthGuard,AuthenticationService,UserService,HomeService,
   fakeBackendProvider,MockBackend,BaseRequestOptions],
   bootstrap: [AppComponent]

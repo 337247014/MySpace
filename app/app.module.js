@@ -17,18 +17,18 @@ var app_routing_module_1 = require('./app-routing.module');
 var ng2_charts_1 = require('ng2-charts');
 //common
 var index_1 = require('./common/guards/index');
-var subheader_component_1 = require('./common/component/subheader.component');
+var index_2 = require('./common/component/index');
 //components
 var app_component_1 = require('./app.component');
-var index_2 = require('./login/index');
+var index_3 = require('./login/index');
 var home_component_1 = require('./home/home.component');
 var brandImages_component_1 = require('./brandImages/brandImages.component');
 var myCharts_component_1 = require('./myCharts/myCharts.component');
 //services
-var index_3 = require('./common/service/index');
+var index_4 = require('./common/service/index');
 var home_service_1 = require('./home/home.service');
 //fack
-var index_4 = require('./common/helpers/index');
+var index_5 = require('./common/helpers/index');
 var testing_1 = require('@angular/http/testing');
 var http_2 = require('@angular/http');
 var AppModule = (function () {
@@ -37,9 +37,9 @@ var AppModule = (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, app_routing_module_1.AppRoutingModule, ng2_charts_1.ChartsModule],
-            declarations: [app_component_1.AppComponent, index_2.LoginComponent, home_component_1.HomeComponent, brandImages_component_1.BrandImagesComponent, subheader_component_1.SubheaderComponent, myCharts_component_1.MyChartsComponent],
-            providers: [index_1.AuthGuard, index_3.AuthenticationService, index_3.UserService, home_service_1.HomeService,
-                index_4.fakeBackendProvider, testing_1.MockBackend, http_2.BaseRequestOptions],
+            declarations: [app_component_1.AppComponent, index_3.LoginComponent, home_component_1.HomeComponent, brandImages_component_1.BrandImagesComponent, index_2.SubheaderComponent, myCharts_component_1.MyChartsComponent, index_2.SiteFooterComponent],
+            providers: [index_1.AuthGuard, index_4.AuthenticationService, index_4.UserService, home_service_1.HomeService,
+                index_5.fakeBackendProvider, testing_1.MockBackend, http_2.BaseRequestOptions],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
