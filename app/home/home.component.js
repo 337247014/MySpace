@@ -35,6 +35,9 @@ var HomeComponent = (function () {
     HomeComponent.prototype.gotoImages = function () {
         this.router.navigate(['/images']);
     };
+    HomeComponent.prototype.gotoCharts = function () {
+        this.router.navigate(['/chart']);
+    };
     HomeComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

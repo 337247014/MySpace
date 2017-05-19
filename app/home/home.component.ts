@@ -41,5 +41,9 @@ export class HomeComponent implements OnInit{
         this.router.navigate(['/images']);
     }
 
+    gotoCharts():void{
+        this.router.navigate(['/chart']);
+    }
+
 
 }
