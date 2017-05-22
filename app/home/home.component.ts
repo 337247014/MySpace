@@ -4,14 +4,13 @@ import { Router } from '@angular/router';
 import {HomeService} from './home.service';
 import {UserService} from '../common/service/index';
 import {User} from '../models/index';
-declare var $: any;
+// declare var $: any;
 
 @Component({
   moduleId: module.id,
   selector: 'my-home',
   templateUrl:'/app/home/home.html',
   styleUrls:['./home.css'],
-//   providers:[HomeService]
 })
 export class HomeComponent implements OnInit{ 
    title: any;
@@ -20,7 +19,8 @@ export class HomeComponent implements OnInit{
     constructor(
         private router: Router,
         private homeService: HomeService,
-        private userService:UserService) {
+        private userService:UserService
+        ) {
     }
 
     ngOnInit(): void {
@@ -36,5 +36,14 @@ export class HomeComponent implements OnInit{
     gotoScroll():void{
         // document.location = "home#tileCard";
     }
+
+    gotoImages():void{
+        this.router.navigate(['/images']);
+    }
+
+    gotoCharts():void{
+        this.router.navigate(['/chart']);
+    }
+
 
 }

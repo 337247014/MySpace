@@ -10,6 +10,8 @@ import{BrandImage} from '../models/index';
   styleUrls:['./brandImages.css'],
 })
 export class BrandImagesComponent implements OnInit{ 
+   subHeaderImage:string;
+   subHeaderText:string;
    brandImages: BrandImage[];
 
     constructor(
@@ -17,6 +19,9 @@ export class BrandImagesComponent implements OnInit{
     }
 
     ngOnInit(): void {
+        this.subHeaderImage = "/app/content/images/home/carousel-6.jpg"
+        this.subHeaderText = "Space Images";
+
         this.brandImages = [{imageUrl:'/app/content/images/home/1.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/1.jpg'},
         {imageUrl:'/app/content/images/home/2.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/2.jpg'},
         {imageUrl:'/app/content/images/home/3.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/3.jpg'},
@@ -28,6 +33,8 @@ export class BrandImagesComponent implements OnInit{
         {imageUrl:'/app/content/images/home/carousel-6.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/carousel-6.jpg'},
         {imageUrl:'/app/content/images/home/4.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/4.jpg'},
         {imageUrl:'/app/content/images/home/1.jpg',imageTitle:'this is first image',detailUrl:'/app/content/images/home/1.jpg'},];
+
+        
     }
 
 }

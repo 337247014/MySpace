@@ -1,4 +1,4 @@
-<div class="subHeaderScreen backgroundScale" style="position:relative;background-image: url('/app/content/images/home-header.jpg');background-color:#e4e4e4;">
+<div class="subHeaderScreen backgroundScale" [style.background]="'url(' + backgroundImage + ')'" style="position:relative;background-color:#e4e4e4;">
     <!--Logo-->
     <div class="animated slideInDown" style="text-decoration: none;position: relative; float: left; left: 8%;top: 5%;">
         <a href="mailto:my@qq.com?subject=This%20is%20the%20subject" style="text-decoration: none;">
@@ -20,6 +20,11 @@
     <!--sign out button-->
     <div class="animated slideInDown delay-1" style="position: relative; float: right;right:5%;top: 5%;" placement="bottom" ngbTooltip="Sign out">
         <a [routerLink]="['/login']"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
+    </div>
+
+    <div style="position:absolute;float:left;left:8%;bottom:10%;">
+        <a [routerLink]="['/home']" class="vertical-center remove-text-decoration" style="color:#fff;"><span style="margin-right:10px;"><i class="fa fa-angle-left" aria-hidden="true"></i></span>BACK</a>
+        <div style="color:#fff;font-size:60px;line-height:60px;"><p>{{headerText}}</p></div>
     </div>
 
     <!--scroll down to exploer-->

@@ -25,9 +25,9 @@
       // other libraries
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
+      'ng2-charts':'node_modules/ng2-charts/bundles/ng2-charts.umd.js',
       '@ng-bootstrap/ng-bootstrap': 'node_modules/@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js',
-      // "css-animator": "node_modules/css-animator/bundles/css-animator.js",
-      // "jquery": "npm:jquery@3.2.1",
+
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
