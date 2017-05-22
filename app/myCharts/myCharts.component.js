@@ -8,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
 var MyChartsComponent = (function () {
     function MyChartsComponent(router) {
         this.router = router;
@@ -97,7 +98,8 @@ var MyChartsComponent = (function () {
             (Math.random() * 100),
             56,
             (Math.random() * 100),
-            40];
+            40
+        ];
         var clone = JSON.parse(JSON.stringify(this.barChartData));
         clone[0].data = data;
         this.barChartData = clone;
@@ -150,16 +152,16 @@ var MyChartsComponent = (function () {
     MyChartsComponent.prototype.chartHovered = function (e) {
         console.log(e);
     };
-    MyChartsComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'my-charts',
-            templateUrl: '/app/myCharts/myCharts.html',
-            styleUrls: ['./myCharts.css'],
-        }), 
-        __metadata('design:paramtypes', [router_1.Router])
-    ], MyChartsComponent);
     return MyChartsComponent;
 }());
+MyChartsComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'my-charts',
+        templateUrl: '/app/myCharts/myCharts.html',
+        styleUrls: ['./myCharts.css'],
+    }),
+    __metadata("design:paramtypes", [router_1.Router])
+], MyChartsComponent);
 exports.MyChartsComponent = MyChartsComponent;
 //# sourceMappingURL=myCharts.component.js.map

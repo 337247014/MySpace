@@ -1,6 +1,7 @@
 "use strict";
-var http_1 = require('@angular/http');
-var testing_1 = require('@angular/http/testing');
+Object.defineProperty(exports, "__esModule", { value: true });
+var http_1 = require("@angular/http");
+var testing_1 = require("@angular/http/testing");
 function fakeBackendFactory(backend, options) {
     // configure fake backend
     backend.connections.subscribe(function (connection) {

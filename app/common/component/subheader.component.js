@@ -8,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
 var SubheaderComponent = (function () {
     function SubheaderComponent(router) {
         this.router = router;
@@ -17,23 +18,24 @@ var SubheaderComponent = (function () {
     SubheaderComponent.prototype.ngOnInit = function () {
         //  this.backgroundImage = "/app/content/images/home-header.jpg";
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], SubheaderComponent.prototype, "backgroundImage", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], SubheaderComponent.prototype, "headerText", void 0);
-    SubheaderComponent = __decorate([
-        core_1.Component({
-            selector: 'sub-header',
-            templateUrl: '/app/common/component/subheader.html',
-            styleUrls: [],
-        }), 
-        __metadata('design:paramtypes', [router_1.Router])
-    ], SubheaderComponent);
     return SubheaderComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], SubheaderComponent.prototype, "backgroundImage", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], SubheaderComponent.prototype, "headerText", void 0);
+SubheaderComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'sub-header',
+        templateUrl: '/app/common/component/subheader.html',
+        styleUrls: [],
+    }),
+    __metadata("design:paramtypes", [router_1.Router])
+], SubheaderComponent);
 exports.SubheaderComponent = SubheaderComponent;
 //# sourceMappingURL=subheader.component.js.map

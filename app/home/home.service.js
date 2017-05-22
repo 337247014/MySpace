@@ -8,11 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
-require('rxjs/Rx');
-var Observable_1 = require('rxjs/Observable');
-var app_global_1 = require('../app.global');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var http_1 = require("@angular/http");
+require("rxjs/Rx");
+var Observable_1 = require("rxjs/Observable");
+var app_global_1 = require("../app.global");
 var HomeService = (function () {
     function HomeService(http) {
         this.http = http;
@@ -27,11 +28,11 @@ var HomeService = (function () {
         // throw an application level error
         return Observable_1.Observable.throw(errorMsg);
     };
-    HomeService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], HomeService);
     return HomeService;
 }());
+HomeService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], HomeService);
 exports.HomeService = HomeService;
 //# sourceMappingURL=home.service.js.map

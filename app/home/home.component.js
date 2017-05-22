@@ -8,10 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var home_service_1 = require('./home.service');
-var index_1 = require('../common/service/index');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var home_service_1 = require("./home.service");
+var index_1 = require("../common/service/index");
 // declare var $: any;
 var HomeComponent = (function () {
     function HomeComponent(router, homeService, userService) {
@@ -38,16 +39,18 @@ var HomeComponent = (function () {
     HomeComponent.prototype.gotoCharts = function () {
         this.router.navigate(['/chart']);
     };
-    HomeComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'my-home',
-            templateUrl: '/app/home/home.html',
-            styleUrls: ['./home.css'],
-        }), 
-        __metadata('design:paramtypes', [router_1.Router, home_service_1.HomeService, index_1.UserService])
-    ], HomeComponent);
     return HomeComponent;
 }());
+HomeComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'my-home',
+        templateUrl: '/app/home/home.html',
+        styleUrls: ['./home.css'],
+    }),
+    __metadata("design:paramtypes", [router_1.Router,
+        home_service_1.HomeService,
+        index_1.UserService])
+], HomeComponent);
 exports.HomeComponent = HomeComponent;
 //# sourceMappingURL=home.component.js.map
