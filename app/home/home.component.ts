@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit{
     }
 
     ngOnInit(): void {
-        this.title = 'My Home';
+        this.title = 'My Space';
 
         this.userService.getUsers()
             .subscribe(users => {

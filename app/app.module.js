@@ -37,7 +37,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, app_routing_module_1.AppRoutingModule, ng2_charts_1.ChartsModule, ng_bootstrap_1.NgbModule.forRoot()],
-        declarations: [app_component_1.AppComponent, index_3.LoginComponent, home_component_1.HomeComponent, brandImages_component_1.BrandImagesComponent, index_2.SubheaderComponent, myCharts_component_1.MyChartsComponent, index_2.SiteFooterComponent, index_2.NgbdCarouselBasic],
+        declarations: [app_component_1.AppComponent, index_3.LoginComponent, home_component_1.HomeComponent, brandImages_component_1.BrandImagesComponent, index_2.SubheaderComponent, myCharts_component_1.MyChartsComponent, index_2.SiteFooterComponent, index_2.NgbdCarouselBasic, index_2.NavigationComponent],
         providers: [index_1.AuthGuard, index_4.AuthenticationService, index_4.UserService, home_service_1.HomeService,
             index_5.fakeBackendProvider, testing_1.MockBackend, http_2.BaseRequestOptions],
         bootstrap: [app_component_1.AppComponent]
