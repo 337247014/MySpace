@@ -23,7 +23,7 @@ var HomeComponent = (function () {
     }
     HomeComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.title = 'My Home';
+        this.title = 'My Space';
         this.userService.getUsers()
             .subscribe(function (users) {
             _this.users = users;

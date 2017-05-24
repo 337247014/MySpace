@@ -6,4 +6,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./subheader.component"));
 __export(require("./site-footer.component"));
 __export(require("./carousel-basic"));
+__export(require("./navigation.component"));
 //# sourceMappingURL=index.js.map
