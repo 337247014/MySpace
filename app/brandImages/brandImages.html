@@ -5,6 +5,11 @@
         <!--header-->
         <sub-header [backgroundImage]="subHeaderImage" [headerText]="subHeaderText"></sub-header>
 
+        <div class="center" style="width:100%;height:15vh;">
+            <h3>there are {{paginationObject.totals}} items.</h3>
+        </div>
+
+        <!--image cards-->
         <div class="row" style="padding-left: 60px;padding-right: 60px">
             <div class="col-2 searchImageWraper" *ngFor="let item of brandImages">
                 <div class="searchImages center">
@@ -30,6 +35,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!--pagination-->
+        <div class="center" style="width:100%;margin-top:20px;">
+            <ngb-pagination [collectionSize]="paginationObject.totals" [(page)]="paginationObject.currentPage" [(pageSize)]="paginationObject.pageSize" (pageChange)="changePage()" [maxSize]="5" [rotate]="true" aria-label="pagination"></ngb-pagination>
         </div>
 
         <site-footer></site-footer>
