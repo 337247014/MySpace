@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
+import '../styles.css';
+
 @Component({
-  moduleId: module.id,
   selector: 'my-app',
-  templateUrl:'/app/app.component.html'
+  templateUrl:'./app.component.html'
 })
 export class AppComponent { 
   title = "My Space"

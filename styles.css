@@ -1,11 +1,11 @@
 /* Master Styles */
 .remove-text-decoration{
   text-decoration: none !important;
-}
+} 
 
 .isShow{
   visibility: visible !important;
-}
+} 
 
 .isHidden{
   visibility: hidden; 

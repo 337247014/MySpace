@@ -7,10 +7,10 @@ import {User} from '../models/index';
 // declare var $: any;
 
 @Component({
-  moduleId: module.id,
   selector: 'my-home',
-  templateUrl:'/app/home/home.html',
-  styleUrls:['./home.css'],
+  templateUrl:'./home.html',
+//   styles: require('./home.css') 
+  styleUrls:['./home.css']
 })
 export class HomeComponent implements OnInit{ 
    title: any;

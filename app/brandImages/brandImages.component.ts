@@ -4,10 +4,10 @@ import { Router } from '@angular/router';
 import{BrandImage} from '../models/index';
 
 @Component({
-  moduleId: module.id,
   selector: 'my-images',
-  templateUrl:'/app/brandImages/brandImages.html',
-  styleUrls:['./brandImages.css'],
+  templateUrl:'./brandImages.html',
+//   styles: require('./brandImages.css') 
+  styleUrls:['./brandImages.css']
 })
 export class BrandImagesComponent implements OnInit{ 
    subHeaderImage:string;

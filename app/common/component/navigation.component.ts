@@ -2,9 +2,8 @@ import { Component,OnInit,Input,Output,EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  moduleId: module.id,
   selector: 'navigation',
-  templateUrl:'/app/common/component/navigation.html',
+  templateUrl:'./navigation.html',
   styleUrls:[''],
 })
 export class NavigationComponent implements OnInit{ 

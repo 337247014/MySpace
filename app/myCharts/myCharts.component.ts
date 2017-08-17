@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-    moduleId: module.id,
     selector: 'my-charts',
-    templateUrl: '/app/myCharts/myCharts.html',
-    styleUrls: ['./myCharts.css'],
+    templateUrl: './myCharts.html',
+    // styles: require('./myCharts.css') 
+    styleUrls: ['./myCharts.css']
 })
 export class MyChartsComponent implements OnInit {
     subHeaderImage:string;
