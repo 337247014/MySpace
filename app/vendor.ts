@@ -11,7 +11,10 @@ import '@angular/forms';
 // other lib
 import 'rxjs';
 import 'angular-in-memory-web-api';
-import 'ng2-charts';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import '@ng-bootstrap/ng-bootstrap';
+import 'ng2-charts';
+
 
 
