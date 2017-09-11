@@ -45,5 +45,9 @@ export class HomeComponent implements OnInit{
         this.router.navigate(['/chart']);
     }
 
+    gotoForm():void{
+        this.router.navigate(['/form']);
+    }
+
 
 }

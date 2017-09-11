@@ -5,4 +5,5 @@ function __export(m) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./user"));
 __export(require("./brandImage"));
+__export(require("./Order"));
 //# sourceMappingURL=index.js.map

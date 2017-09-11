@@ -39,6 +39,9 @@ var HomeComponent = (function () {
     HomeComponent.prototype.gotoCharts = function () {
         this.router.navigate(['/chart']);
     };
+    HomeComponent.prototype.gotoForm = function () {
+        this.router.navigate(['/form']);
+    };
     return HomeComponent;
 }());
 HomeComponent = __decorate([

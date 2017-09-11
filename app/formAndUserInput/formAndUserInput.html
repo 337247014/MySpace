@@ -1,0 +1,78 @@
+<navigation></navigation>
+
+<div class="row">
+    <div class="col">
+        <!--Header-->
+        <sub-header [backgroundImage]="subHeaderImage" [headerText]="subHeaderText"></sub-header>
+
+        <!--Page content-->
+        <div class="row" style="padding-left: 60px;padding-right: 60px">
+            <!--1. user input-->
+            <div class="col">
+                <!--1. 通过$event对象取得用户的输入
+                该方法消耗大，它将整个event对象传入component-->
+                <input type="text" (keyup)="onKey($event)" />
+                <p>{{tempValue}}</p>
+
+                <!--2.使用模板应用变量（#+名字代表元素本身）来获取用户的输入
+                    直接使用模板引用变量的值在<p>，但需要一个事件来刷新页面，这里用了keyup并且就给了0，实际不做任何操作-->
+                <input type="text" #txtTemp (keyup)="0" />
+                <p>{{txtTemp.value}}</p>
+
+                <!--keyup事件是当键盘按下并释放时触发的事件
+                    keyup.enter是当键盘输入并按下enter键时才触发的事件
+                    blur是当鼠标离开的时候触发的事件，
+                    注在blur事件中绑定了两句js,即执行完第一句js(方法)后执行第二句JS清空input元素的值
+                -->
+                <input #inputObject (keyup.enter)="addList(inputObject.value)" (blur)="addList(inputObject.value); inputObject.value='' "
+                />
+                <button type="button" class="btn btn-success" (click)="addList(inputObject.value)">Add</button>
+                <ul>
+                    <li *ngFor="let item of tempList">
+                        {{item}}
+                    </li>
+                </ul>
+            </div>
+
+            <!--2. Form-->
+            <!--basic validation -- required-->
+            <div class="col">
+                <h1>Order Form</h1>
+                <form (ngSubmit)="onSubmit()" #orderForm="ngForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required
+                         [(ngModel)]="model.name" name="name" 
+                         #name="ngModel">
+                        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                            Name is required
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alterName">Alter Name</label>
+                        <input type="text" class="form-control" id="alterName" [(ngModel)]="model.alterName" name="alterName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Order Type</label>
+                        <select class="form-control" id="type" required 
+                        [(ngModel)]="model.type" name="type" 
+                        #orderType="ngModel">
+                          <option *ngFor="let item of types" [value]="item">{{item}}</option>
+                        </select>
+                        <div [hidden]="orderType.valid || orderType.pristine" class="alert alert-danger">
+                                Order Type is required
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success" [disabled]="!orderForm.form.valid">Submit</button>
+                    <button type="button" class="btn btn-default" (click)="newOrder(); orderForm.reset()">New Order</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <site-footer></site-footer>
+    </div>
+</div>

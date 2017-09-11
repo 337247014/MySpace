@@ -13,12 +13,14 @@ var index_2 = require("./common/guards/index");
 var home_component_1 = require("./home/home.component");
 var brandImages_component_1 = require("./brandImages/brandImages.component");
 var myCharts_component_1 = require("./myCharts/myCharts.component");
+var formAndUserInput_component_1 = require("./formAndUserInput/formAndUserInput.component");
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'login', component: index_1.LoginComponent },
     { path: 'home', component: home_component_1.HomeComponent, canActivate: [index_2.AuthGuard] },
     { path: 'images', component: brandImages_component_1.BrandImagesComponent, canActivate: [index_2.AuthGuard] },
-    { path: 'chart', component: myCharts_component_1.MyChartsComponent, canActivate: [index_2.AuthGuard] }
+    { path: 'chart', component: myCharts_component_1.MyChartsComponent, canActivate: [index_2.AuthGuard] },
+    { path: 'form', component: formAndUserInput_component_1.FormAndUserInputComponent, canActivate: [index_2.AuthGuard] }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

@@ -16,6 +16,7 @@ import { LoginComponent } from './login/index';
 import { HomeComponent } from './home/home.component';
 import { BrandImagesComponent } from './brandImages/brandImages.component';
 import { MyChartsComponent } from './myCharts/myCharts.component';
+import {FormAndUserInputComponent} from './formAndUserInput/formAndUserInput.component'
 
 //services
 import { AuthenticationService, UserService } from './common/service/index';
@@ -28,7 +29,7 @@ import { BaseRequestOptions } from '@angular/http';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpModule,AppRoutingModule,ChartsModule,NgbModule.forRoot()],
-  declarations: [AppComponent,LoginComponent,HomeComponent,BrandImagesComponent,SubheaderComponent,MyChartsComponent,SiteFooterComponent,NgbdCarouselBasic,NavigationComponent],
+  declarations: [AppComponent,LoginComponent,HomeComponent,BrandImagesComponent,SubheaderComponent,MyChartsComponent,SiteFooterComponent,NgbdCarouselBasic,NavigationComponent,FormAndUserInputComponent],
   providers: [AuthGuard,AuthenticationService,UserService,HomeService,
   fakeBackendProvider,MockBackend,BaseRequestOptions],
   bootstrap: [AppComponent]
